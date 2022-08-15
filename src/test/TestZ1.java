@@ -9,4 +9,9 @@ public class TestZ1 {
     public void t1(){
         System.out.println("hello");
     }
+
+    @Test
+    public void t2(){
+        //图一乐
+    }
 }
