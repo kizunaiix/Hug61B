@@ -24,6 +24,10 @@ public class TestZ1 {
         System.out.println(p1.getColor());
         p1.setColor("hello");
         System.out.println(p1.getColor());
+    }
+
+    @Test
+    public void t3(){
 
     }
 }
