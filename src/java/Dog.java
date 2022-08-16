@@ -3,7 +3,7 @@ package src.java;
 
 public class Dog extends Animal{
 
-    private String color = "default color";
+    protected String color = "default color";
     
     public Dog maxDog(Dog d1, Dog d2){
         System.out.println("shanghai");
@@ -26,7 +26,6 @@ public class Dog extends Animal{
         return null;
     }
 
-//    @Test
     public String getColor() {
         return color;
     }
