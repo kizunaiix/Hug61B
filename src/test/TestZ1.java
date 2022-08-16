@@ -1,9 +1,12 @@
 package src.test;
 
 import src.java.Poodle;
-//import java.util.List;
 import org.junit.Test;
-//import src.main.Box;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Arrays;
 
 public class TestZ1 {
 
@@ -26,8 +29,27 @@ public class TestZ1 {
         System.out.println(p1.getColor());
     }
 
+    /**试一下toString()方法*/
     @Test
     public void t3(){
+        int a = 4;
+        int[] b = {1,2,3};
+        String stringed;
 
+
+        stringed = Integer.toString(a);  //Integer类转String
+        System.out.println(stringed);
+        System.out.println("----------------");
+        stringed = Arrays.toString(b);   //Arrays类（其实是接口）转String
+        System.out.println(stringed);
+        System.out.println("----------------");
+        stringed = b.toString();         //Object类直接toString，给的是地址
+        System.out.println(stringed);
+    }
+
+    /**TODO:学习并理解递归方法*/
+    @Test
+    public void t4(){
+        
     }
 }

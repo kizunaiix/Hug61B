@@ -1,6 +1,8 @@
 package src.test;
 
 import org.junit.Test;
+import src.java.Animal;
+import src.java.Animalistic;
 import src.java.Dog;
 
 /**玩一下Test*/

@@ -1,4 +1,4 @@
-package src.main_deprecated;
+package src.test_deprecated;
 
 import src.java.Animal;
 import src.java.English;

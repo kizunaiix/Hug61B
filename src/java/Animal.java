@@ -1,4 +1,6 @@
 package src.java;
+
+
 /**这个Animal类实现了Animalistic接口。 */
 public class Animal implements Animalistic {
 
@@ -29,5 +31,7 @@ public class Animal implements Animalistic {
     public String getAteThings() {
         return ateThings;
     }
+
+
 
 }

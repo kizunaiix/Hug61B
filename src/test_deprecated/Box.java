@@ -1,4 +1,4 @@
-package src.main_deprecated;
+package src.test_deprecated;
 
 public class Box<kurse> {
 

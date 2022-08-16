@@ -22,8 +22,7 @@ public class Dog extends Animal{
 
     @Override
     public String getAteThings() {
-        System.out.println("Dog get " + ateThings);
-        return null;
+        return ateThings;
     }
 
     public String getColor() {
