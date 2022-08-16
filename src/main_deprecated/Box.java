@@ -1,6 +1,4 @@
-package src.main;
-
-import org.junit.Test;
+package src.main_deprecated;
 
 public class Box<kurse> {
 

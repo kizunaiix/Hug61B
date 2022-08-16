@@ -12,8 +12,8 @@ public class Animal implements Animalistic {
     }
 
     /**
+     * 吃点东西，并打印出来
      * @param i :String ，要吃的东西
-     * @return : print吃了什么
      */
     @Override
     public void eat(String i) {
@@ -21,7 +21,10 @@ public class Animal implements Animalistic {
         System.out.println("ate " + ateThings);
     }
 
-    /**get方法传入str i */
+    /**
+     * 看看最近吃了什么
+     * @return : 最近吃的东西
+     */
     @Override
     public String getAteThings() {
         return ateThings;

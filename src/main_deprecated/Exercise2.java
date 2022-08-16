@@ -1,5 +1,5 @@
 
-package src.main;
+package src.main_deprecated;
 
 import src.java.English;
 import src.java.Language;
