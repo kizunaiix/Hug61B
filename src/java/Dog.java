@@ -2,7 +2,7 @@ package src.java;
 
 import org.junit.Test;
 
-public class Dog implements Animalistic{
+public class Dog extends Animal{
 
     private String color = "default color";
     
@@ -22,8 +22,9 @@ public class Dog implements Animalistic{
     }
 
     @Override
-    public void get(String i) {
-        System.out.println("Dog get " + i);
+    public String getAteThings() {
+        System.out.println("Dog get " + ateThings);
+        return null;
     }
 
 //    @Test

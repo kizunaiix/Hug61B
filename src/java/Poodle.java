@@ -11,9 +11,4 @@ public class Poodle extends Dog{
         return d2;
     }
 
-    @Test
-    public void test2(){
-
-    }
-
 }
