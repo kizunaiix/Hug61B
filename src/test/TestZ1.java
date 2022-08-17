@@ -54,4 +54,11 @@ public class TestZ1 {
         System.out.println(MathThings.jiecheng_rec(start));
         System.out.println(MathThings.fibonacci_n(5));
     }
+
+    /**TODO : 研究一下泛型方法。*/
+    @Test
+    public void t5(){
+
+    }
+
 }
