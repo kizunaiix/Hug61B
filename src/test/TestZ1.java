@@ -1,11 +1,9 @@
 package src.test;
 
 import src.java.Poodle;
+import src.java.MathThings;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.Arrays;
 
 public class TestZ1 {
@@ -47,9 +45,13 @@ public class TestZ1 {
         System.out.println(stringed);
     }
 
-    /**TODO:学习并理解递归方法*/
+    /**学习并理解递归方法*/
     @Test
     public void t4(){
-        
+        int start = 5;
+
+        System.out.println(MathThings.jiecheng(start));
+        System.out.println(MathThings.jiecheng_rec(start));
+        System.out.println(MathThings.fibonacci_n(5));
     }
 }
