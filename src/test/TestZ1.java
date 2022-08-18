@@ -3,7 +3,6 @@ package src.test;
 import src.java.Poodle;
 import src.java.MathThings;
 import org.junit.Test;
-
 import java.util.Arrays;
 
 public class TestZ1 {
@@ -58,7 +57,9 @@ public class TestZ1 {
     /**TODO : 研究一下泛型方法。*/
     @Test
     public void t5(){
-
+        Poodle p1 = new Poodle();
+        p1.tellSeen("a ball");
+        p1.tellSeen(300 + 100);
     }
 
 }

@@ -25,4 +25,12 @@ public class Poodle extends Dog{
         return color;
     }
 
+    /**
+     * 这是一个泛型方法。
+     * 给它看一个东西，它会说出自己看到了什么
+     */
+    public <things> void tellSeen(things x){
+        System.out.println(x);
+    }
+
 }
