@@ -6,6 +6,15 @@ public class Poodle extends Dog{
 
     public Poodle(){
         this.color = "poodleColor";
+        this.weightInKg = 20;
+        this.ateThings = "nothing";
+    }
+
+    /**有参数的构建方法，看看用的时候如何提示参数*/
+    public Poodle(String color, int weightInKg){
+        this.color = color;
+        this.weightInKg = weightInKg;
+        this.ateThings = "nothing";
     }
 
     @Override

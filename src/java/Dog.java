@@ -4,6 +4,8 @@ package src.java;
 public class Dog extends Animal{
 
     protected String color = "default color";
+    protected int weightInKg;
+
     
     public Dog maxDog(Dog d1, Dog d2){
         System.out.println("shanghai");
@@ -14,7 +16,7 @@ public class Dog extends Animal{
         System.out.println("wang wang wang");
     }
 
-    /**jiagezhushi*/
+    /**加个注释*/
     @Override
     public void eat(String i) {
         System.out.println("Dog eat " + i);

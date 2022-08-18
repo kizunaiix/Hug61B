@@ -62,9 +62,24 @@ public class TestZ1 {
         p1.tellSeen(300 + 100);
     }
 
-    /**s*/
+    /**
+     * 练习try catch语句 和 throw new exception.
+     * try里面定义的变量只在try里能用.
+     */
     @Test
     public void t6(){
-        
+        int y = 3;
+        try {
+            int x = 3 + 4 ;       // try里面定义的变量只在try里能用。
+            y = y +1;
+            throw new RuntimeException();
+        } catch (RuntimeException e){
+            System.out.println("got exception");
+        }
+        System.out.println(y);
+        int x = 7;
+        if (x == 7){
+            throw new RuntimeException("created an exception.");
+        }
     }
 }
