@@ -54,7 +54,7 @@ public class TestZ1 {
         System.out.println(MathThings.fibonacci_n(5));
     }
 
-    /**TODO : 研究一下泛型方法。*/
+    /**研究一下泛型方法。*/
     @Test
     public void t5(){
         Poodle p1 = new Poodle();
@@ -62,4 +62,9 @@ public class TestZ1 {
         p1.tellSeen(300 + 100);
     }
 
+    /**s*/
+    @Test
+    public void t6(){
+        
+    }
 }
