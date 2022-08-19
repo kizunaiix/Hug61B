@@ -3,7 +3,6 @@ package src.test;
 import src.java.Poodle;
 import src.java.MathThings;
 import org.junit.Test;
-
 import java.util.*;
 
 public class TestZ1 {
@@ -93,6 +92,7 @@ public class TestZ1 {
         l1.add(3);
         l1.add(14);
         System.out.println(l1);
+        System.out.println("______________________________________");
 
         Iterator<Integer> l1_iterator = l1.iterator();  //List的实例本身就具有产生迭代器的方法。
         try {
@@ -102,6 +102,23 @@ public class TestZ1 {
         } catch (Exception e) {
             throw new RuntimeException("got a exception.");
         }
+        System.out.println("______________________________________");
+
+        if (l1.iterator().hasNext()){
+            System.out.println(l1.iterator().next());
+        }
+
+    }
+
+    /**new一下Poodle类里面的嵌套类*/
+    @Test
+    public void t8(){
+        Poodle p1 = new Poodle();
+        Poodle.subclassOfPoodle p1s = p1.new subclassOfPoodle();  // 如果subclassOfPoodle是非静态的，就这样写
+                                                                  // 注意是p1.new xxxxxxxx
+//        Poodle.subclassOfPoodle p1s = new Poodle.subclassOfPoodle();  // 如果是static subclassOfPoodle的话，就得这样写了
+                                                                        // 注意，两种都是Poodle.subclassOfPoodle打头的。
+        System.out.println(p1s.num);
     }
 
 }

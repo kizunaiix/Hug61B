@@ -1,5 +1,7 @@
 package src.java;
 
+import java.util.Objects;
+
 /**Poodle是Dog的子类*/
 public class Poodle extends Dog{
 
@@ -40,6 +42,13 @@ public class Poodle extends Dog{
      */
     public <things> void tellSeen(things x){
         System.out.println(x);
+    }
+
+
+    /**写一个嵌套类，在TestZ1的t8里面尝试了把它new出来。*/
+    public class subclassOfPoodle{
+        public int num = 3;
+
     }
 
 }
