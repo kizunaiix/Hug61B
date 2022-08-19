@@ -3,7 +3,8 @@ package src.test;
 import src.java.Poodle;
 import src.java.MathThings;
 import org.junit.Test;
-import java.util.Arrays;
+
+import java.util.*;
 
 public class TestZ1 {
 
@@ -82,4 +83,25 @@ public class TestZ1 {
             throw new RuntimeException("created an exception.");
         }
     }
+
+    /**试一下迭代器Iterator()*/
+    @Test
+    public void t7(){
+        List<Integer> l1 = new ArrayList<>();
+        l1.add(1);
+        l1.add(2);
+        l1.add(3);
+        l1.add(14);
+        System.out.println(l1);
+
+        Iterator<Integer> l1_iterator = l1.iterator();  //List的实例本身就具有产生迭代器的方法。
+        try {
+            while (l1_iterator.hasNext()){
+                System.out.println(l1_iterator.next());
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("got a exception.");
+        }
+    }
+
 }
