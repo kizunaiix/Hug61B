@@ -5,7 +5,7 @@ package src.main.java;
 public class Animal implements Animalistic {
 
     /**吃过的东西*/
-    public String ateThings;
+    protected String ateThings;
 
 
     /**初始化方法*/
