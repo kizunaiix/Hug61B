@@ -1,11 +1,11 @@
-package src.java;
+package src.main.java;
 
 /**
  * 这样是在注释Language类吗？
  * @author syd@qq.com
  * @talk no exist  
  * @speak 具有这个方法
- * @param iii :并没有这个参数
+ * @param iii:并没有这个参数
  */
 public class Language {
     

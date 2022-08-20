@@ -1,4 +1,4 @@
-package src.java;
+package src.main.java;
 
 
 /**这个Animal类实现了Animalistic接口。 */

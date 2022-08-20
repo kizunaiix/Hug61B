@@ -1,9 +1,7 @@
-package src.test;
+package src.test.java;
 
 import org.junit.Test;
-import src.java.Animal;
-import src.java.Animalistic;
-import src.java.Dog;
+import src.main.java.Dog;
 
 /**玩一下Test*/
 public class TestColor1 {

@@ -1,4 +1,4 @@
-package src.java;
+package src.main.java;
 /**
  * English extends Language
  * ，学习一下extend

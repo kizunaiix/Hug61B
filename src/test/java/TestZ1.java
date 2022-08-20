@@ -1,7 +1,7 @@
-package src.test;
+package src.test.java;
 
-import src.java.Poodle;
-import src.java.MathThings;
+import src.main.java.Poodle;
+import src.main.java.MathThings;
 import org.junit.Test;
 import java.util.*;
 

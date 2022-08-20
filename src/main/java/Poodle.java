@@ -1,6 +1,4 @@
-package src.java;
-
-import java.util.Objects;
+package src.main.java;
 
 /**Poodle是Dog的子类*/
 public class Poodle extends Dog{
