@@ -1,7 +1,5 @@
 package name.kiix;
 
-import name.kiix.Poodle;
-import name.kiix.MathThings;
 import org.junit.Test;
 import java.util.*;
 
@@ -71,7 +69,8 @@ public class TestZ1 {
         int y = 3;
         try {
             int x = 3 + 4 ;       // try里面定义的变量只在try里能用。
-            y = y +1;
+            y = y + 1;
+            x = x + 2; 
             throw new RuntimeException();
         } catch (RuntimeException e){
             System.out.println("got exception");

@@ -1,7 +1,6 @@
 package name.kiix;
 
 import org.junit.Test;
-import name.kiix.Dog;
 
 /**玩一下Test*/
 public class TestColor1 {
