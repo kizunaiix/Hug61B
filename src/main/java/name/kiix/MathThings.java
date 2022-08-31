@@ -34,7 +34,11 @@ public class MathThings {
         }
     }
 
-    /**用递归手写一个冒泡排序*/
+    /**
+     * 用递归手写一个冒泡排序
+     * @param origin :  int[]
+     * @return : sorted int[] of origin
+     */
     public static int[] sortFromStoL(int[] origin) {
         int[] varList = new int[origin.length];
         System.arraycopy(origin, 0, varList, 0, origin.length);
@@ -53,4 +57,5 @@ public class MathThings {
             return sortFromStoL(varList);
         }
     }
+
 }

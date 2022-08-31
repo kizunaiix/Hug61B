@@ -38,7 +38,7 @@ public class TestT1 {
         newStringed = Arrays.toString(b);   //Arrays类（其实是接口）转String
         System.out.println(newStringed);
         System.out.println("----------------");
-        newStringed = b.toString();         //Object类直接toString，给的是地址
+//      newStringed = b.toString();         //Object类直接toString，给的是地址。  这句会有警告，所以就注释了
         System.out.println(newStringed);
     }
 
@@ -68,9 +68,9 @@ public class TestT1 {
     public void t6(){
         int y = 3;
         try {
-            int x = 3 + 4 ;       // try里面定义的变量只在try里能用。
+//          int x = 3 + 4 ;       // try里面定义的变量只在try里能用。
             y = y + 1;
-            x = x + 2; 
+//          x = x + 2;            //所以就把这句也注释了，因为不想看警告
             throw new RuntimeException();
         } catch (RuntimeException e){
             System.out.println("got exception");
@@ -120,12 +120,19 @@ public class TestT1 {
         System.out.println(p1s.num);
     }
 
-    /**TODO :试试手写的冒泡排序,多试几种长度*/
+    /**试试手写的冒泡排序,多试几种长度*/
     @Test
     public void t9(){
         int[] l1 = {2,4,3,1};
-        int[] sorted = MathThings.sortFromStoL(l1);
-        System.out.println(Arrays.toString(sorted));
+        int[] l2 = {4,5,7,8,3,4,8,0,3,5,2,5,0,4};
+
+        int[] sorted1 = MathThings.sortFromStoL(l1);
+        System.out.println("sorted l1 is :");
+        System.out.println(Arrays.toString(sorted1));
+
+        int[] sorted2 = MathThings.sortFromStoL(l2);
+        System.out.println("sorted l2 is :");
+        System.out.println(Arrays.toString(sorted2));
     }
 
 }
