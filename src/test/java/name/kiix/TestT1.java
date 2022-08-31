@@ -2,8 +2,9 @@ package name.kiix;
 
 import org.junit.Test;
 import java.util.*;
+import java.lang.Math;
 
-public class TestZ1 {
+public class TestT1 {
 
     @Test
     public void t1(){
@@ -29,17 +30,16 @@ public class TestZ1 {
     public void t3(){
         int a = 4;
         int[] b = {1,2,3};
-        String stringed;
+        String newStringed;
 
-
-        stringed = Integer.toString(a);  //Integer类转String
-        System.out.println(stringed);
+        newStringed = Integer.toString(a);  //Integer类转String
+        System.out.println(newStringed);
         System.out.println("----------------");
-        stringed = Arrays.toString(b);   //Arrays类（其实是接口）转String
-        System.out.println(stringed);
+        newStringed = Arrays.toString(b);   //Arrays类（其实是接口）转String
+        System.out.println(newStringed);
         System.out.println("----------------");
-        stringed = b.toString();         //Object类直接toString，给的是地址
-        System.out.println(stringed);
+        newStringed = b.toString();         //Object类直接toString，给的是地址
+        System.out.println(newStringed);
     }
 
     /**学习并理解递归方法*/
@@ -76,7 +76,7 @@ public class TestZ1 {
             System.out.println("got exception");
         }
         System.out.println(y);
-        int x = 7;
+        int x = (int) (Math.random() * 7);
         if (x == 7){
             throw new RuntimeException("created an exception.");
         }
@@ -118,6 +118,17 @@ public class TestZ1 {
 //        Poodle.subclassOfPoodle p1s = new Poodle.subclassOfPoodle();  // 如果是static subclassOfPoodle的话，就得这样写了
                                                                         // 注意，两种都是Poodle.subclassOfPoodle打头的。
         System.out.println(p1s.num);
+    }
+
+    /**TODO :试试手写的冒泡排序,多试几种长度*/
+    @Test
+    public void t9(){
+        int[] l1 = {2,4,3,1};
+        int i = 1;
+        int[] sorted = MathThings.sortFromStoL(l1);
+
+
+        System.out.println(Arrays.toString(sorted));
     }
 
 }

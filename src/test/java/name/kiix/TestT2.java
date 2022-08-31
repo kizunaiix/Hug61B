@@ -1,6 +1,5 @@
 package name.kiix;
 
-
 import org.junit.Test;
 
 public class TestT2 {

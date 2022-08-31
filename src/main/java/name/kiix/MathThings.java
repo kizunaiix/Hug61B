@@ -1,5 +1,8 @@
 package name.kiix;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MathThings {
 
     /**用普通方法实现的阶乘*/
@@ -28,6 +31,26 @@ public class MathThings {
             return 1;
         }else {
             return fibonacci_n(n - 1) + fibonacci_n(n - 2);
+        }
+    }
+
+    /**用递归手写一个冒泡排序*/
+    public static int[] sortFromStoL(int[] origin) {
+        int[] varList = new int[origin.length];
+        System.arraycopy(origin, 0, varList, 0, origin.length);
+
+        for (int i = 0; i < varList.length - 1; i = i + 1) {
+            if (varList[i] > varList[i + 1]) {
+                int ex = varList[i];
+                varList[i] = varList[i + 1];
+                varList[i + 1] = ex;
+            }
+        }
+
+        if(Arrays.equals(varList,origin)){
+            return varList;
+        }else{
+            return sortFromStoL(varList);
         }
     }
 }
