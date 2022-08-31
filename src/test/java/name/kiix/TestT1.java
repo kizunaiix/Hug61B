@@ -124,10 +124,7 @@ public class TestT1 {
     @Test
     public void t9(){
         int[] l1 = {2,4,3,1};
-        int i = 1;
         int[] sorted = MathThings.sortFromStoL(l1);
-
-
         System.out.println(Arrays.toString(sorted));
     }
 
