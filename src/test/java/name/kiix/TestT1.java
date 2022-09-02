@@ -120,7 +120,9 @@ public class TestT1 {
         System.out.println(p1s.num);
     }
 
-    /**试试手写的冒泡排序,多试几种长度*/
+    /**试试手写的冒泡排序,多试几种长度
+     * 带负数的也试了
+     */
     @Test
     public void t9(){
         int[] l1 = {2,4,3,1};
