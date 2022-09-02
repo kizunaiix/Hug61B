@@ -125,6 +125,7 @@ public class TestT1 {
     public void t9(){
         int[] l1 = {2,4,3,1};
         int[] l2 = {4,5,7,8,3,4,8,0,3,5,2,5,0,4};
+        int[] l3 = {0,-3,-5,-7,9,6,7,5,3,5,0};
 
         int[] sorted1 = MathThings.sortFromStoL(l1);
         System.out.println("sorted l1 is :");
@@ -133,6 +134,10 @@ public class TestT1 {
         int[] sorted2 = MathThings.sortFromStoL(l2);
         System.out.println("sorted l2 is :");
         System.out.println(Arrays.toString(sorted2));
+
+        int[] sorted3 = MathThings.sortFromStoL(l3);
+        System.out.println("sorted l2 is :");
+        System.out.println(Arrays.toString(sorted3));
     }
 
 }
