@@ -43,6 +43,7 @@ public class MathThings {
         int[] varList = new int[origin.length];
         System.arraycopy(origin, 0, varList, 0, origin.length);
 
+        /*这个for循环是一轮冒泡*/
         for (int i = 0; i < varList.length - 1; i = i + 1) {
             if (varList[i] > varList[i + 1]) {
                 int ex = varList[i];
